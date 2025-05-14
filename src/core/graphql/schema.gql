@@ -1,0 +1,46 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input ChangeColorInput {
+  hex: String
+  name: String
+  rgb: String
+}
+
+type ColorEntity {
+  createdAt: DateTime!
+  hex: String!
+  id: ID!
+  name: String!
+  rgb: String
+  updatedAt: DateTime!
+}
+
+input CreateColorInput {
+  hex: String!
+  name: String!
+  rgb: String!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+input FiltersInput {
+  searchTerm: String
+  skip: Int
+  take: Int
+}
+
+type Mutation {
+  createColor(data: CreateColorInput!): Boolean!
+  removeColor(id: String!): Boolean!
+  updateColor(data: ChangeColorInput!, id: String!): Boolean!
+}
+
+type Query {
+  findAllColors(filters: FiltersInput): [ColorEntity!]!
+  findColorByName(name: String!): ColorEntity!
+}

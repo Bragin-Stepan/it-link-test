@@ -1,0 +1,18 @@
+services:
+  mysql:
+    image: mysql
+    container_name: mysql_${PROJECT_NAME}
+    ports:
+      - '3306:3306'
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USERNAME} 
+      MYSQL_PASSWORD: ${DB_PASSWORD} 
+      MYSQL_ROOT_PASSWORD: secret
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+
+
+volumes:
+  mysql_data:
