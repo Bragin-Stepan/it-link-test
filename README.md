@@ -12,7 +12,7 @@ NestJS + GraphQL + TypeORM + MySQL + Docker
 - Реализовано удаление цвета
 
 Потыкать можно через Postman
-- http://gxgp-wo94-chsd.gw-1a.dockhost.net/graphql
+- https://gxgp-wo94-chsd.gw-1a.dockhost.net/graphql
 
 ### Локальный запуск
 
