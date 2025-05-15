@@ -1,5 +1,5 @@
 
-## Тестовое API
+## Тестовое
 
 NestJS + GraphQL + TypeORM + MySQL + Docker
 
