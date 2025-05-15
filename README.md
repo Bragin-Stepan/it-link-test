@@ -21,3 +21,8 @@ NestJS + GraphQL + TypeORM + MySQL + Docker
 - Запустить `docker-compose up -d --build`
 - Запустить `yarn run start:dev` или `yarn run dev`
 - Локально доступно по адресу http://localhost:3000/graphql
+
+### Тесты
+
+- `yarn run test`
+- `yarn run test:e2e`

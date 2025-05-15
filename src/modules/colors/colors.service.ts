@@ -41,7 +41,7 @@ export class ColorsService {
 		});
 
 		if (!color) {
-			throw new NotFoundException(`С таким именем цвет не найден`);
+			throw new NotFoundException(`Цвет с таким именем не найден`);
 		}
 
 		return color;
